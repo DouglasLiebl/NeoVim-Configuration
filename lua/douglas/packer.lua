@@ -36,8 +36,11 @@ return require('packer').startup(function(use)
   -- Git Fugitive
   use ('tpope/vim-fugitive')
   use ('tpope/vim-rhubarb')
+
   -- Elixir-Tools
-  use({ "elixir-tools/elixir-tools.nvim", tag = "stable", requires = { "nvim-lua/plenary.nvim" }})
+  use ({ "elixir-tools/elixir-tools.nvim", tag = "stable", requires = { "nvim-lua/plenary.nvim" }})
+
+  use ("onsails/lspkind-nvim")
 
   -- LSP
   use {

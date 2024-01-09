@@ -85,7 +85,7 @@ _G.packer_plugins = {
     url = "https://github.com/jiangmiao/auto-pairs"
   },
   ["bamboo.nvim"] = {
-    config = { "\27LJ\2\nö\3\0\0\4\0\15\0\0246\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\4\0=\3\5\0025\3\6\0=\3\a\0025\3\b\0=\3\t\0024\3\0\0=\3\n\0024\3\0\0=\3\v\0025\3\f\0=\3\r\2B\0\2\0016\0\0\0'\2\1\0B\0\2\0029\0\14\0B\0\1\1K\0\1\0\tload\16diagnostics\1\0\3\14undercurl\2\vdarker\1\15background\2\15highlights\vcolors\flualine\1\0\1\16transparent\1\15code_style\1\0\b\rkeywords\tnone\17conditionals\vitalic\14variables\tnone\rcomments\vitalic\15parameters\vitalic\15namespaces\vitalic\14functions\tnone\fstrings\tnone\22toggle_style_list\1\4\0\0\rvulgaris\14multiplex\nlight\1\0\6\16transparent\1\25cmp_itemkind_reverse\1\18ending_tildes\1\17dim_inactive\1\16term_colors\2\nstyle\rvulgaris\nsetup\vbamboo\frequire\0" },
+    config = { "\27LJ\2\nö\3\0\0\4\0\15\0\0246\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\4\0=\3\5\0025\3\6\0=\3\a\0025\3\b\0=\3\t\0024\3\0\0=\3\n\0024\3\0\0=\3\v\0025\3\f\0=\3\r\2B\0\2\0016\0\0\0'\2\1\0B\0\2\0029\0\14\0B\0\1\1K\0\1\0\tload\16diagnostics\1\0\3\vdarker\1\15background\2\14undercurl\2\15highlights\vcolors\flualine\1\0\1\16transparent\1\15code_style\1\0\b\15namespaces\vitalic\14functions\tnone\fstrings\tnone\rkeywords\tnone\17conditionals\vitalic\14variables\tnone\rcomments\vitalic\15parameters\vitalic\22toggle_style_list\1\4\0\0\rvulgaris\14multiplex\nlight\1\0\6\25cmp_itemkind_reverse\1\18ending_tildes\1\17dim_inactive\1\16transparent\1\16term_colors\2\nstyle\rvulgaris\nsetup\vbamboo\frequire\0" },
     loaded = true,
     path = "/home/douglas/.local/share/nvim/site/pack/packer/start/bamboo.nvim",
     url = "https://github.com/ribru17/bamboo.nvim"
@@ -129,6 +129,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/douglas/.local/share/nvim/site/pack/packer/start/lsp-zero.nvim",
     url = "https://github.com/VonHeikemen/lsp-zero.nvim"
+  },
+  ["lspkind-nvim"] = {
+    loaded = true,
+    path = "/home/douglas/.local/share/nvim/site/pack/packer/start/lspkind-nvim",
+    url = "https://github.com/onsails/lspkind-nvim"
   },
   ["mason-lspconfig.nvim"] = {
     loaded = true,
@@ -210,7 +215,7 @@ _G.packer_plugins = {
 time([[Defining packer_plugins]], false)
 -- Config for: bamboo.nvim
 time([[Config for bamboo.nvim]], true)
-try_loadstring("\27LJ\2\nö\3\0\0\4\0\15\0\0246\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\4\0=\3\5\0025\3\6\0=\3\a\0025\3\b\0=\3\t\0024\3\0\0=\3\n\0024\3\0\0=\3\v\0025\3\f\0=\3\r\2B\0\2\0016\0\0\0'\2\1\0B\0\2\0029\0\14\0B\0\1\1K\0\1\0\tload\16diagnostics\1\0\3\14undercurl\2\vdarker\1\15background\2\15highlights\vcolors\flualine\1\0\1\16transparent\1\15code_style\1\0\b\rkeywords\tnone\17conditionals\vitalic\14variables\tnone\rcomments\vitalic\15parameters\vitalic\15namespaces\vitalic\14functions\tnone\fstrings\tnone\22toggle_style_list\1\4\0\0\rvulgaris\14multiplex\nlight\1\0\6\16transparent\1\25cmp_itemkind_reverse\1\18ending_tildes\1\17dim_inactive\1\16term_colors\2\nstyle\rvulgaris\nsetup\vbamboo\frequire\0", "config", "bamboo.nvim")
+try_loadstring("\27LJ\2\nö\3\0\0\4\0\15\0\0246\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\4\0=\3\5\0025\3\6\0=\3\a\0025\3\b\0=\3\t\0024\3\0\0=\3\n\0024\3\0\0=\3\v\0025\3\f\0=\3\r\2B\0\2\0016\0\0\0'\2\1\0B\0\2\0029\0\14\0B\0\1\1K\0\1\0\tload\16diagnostics\1\0\3\vdarker\1\15background\2\14undercurl\2\15highlights\vcolors\flualine\1\0\1\16transparent\1\15code_style\1\0\b\15namespaces\vitalic\14functions\tnone\fstrings\tnone\rkeywords\tnone\17conditionals\vitalic\14variables\tnone\rcomments\vitalic\15parameters\vitalic\22toggle_style_list\1\4\0\0\rvulgaris\14multiplex\nlight\1\0\6\25cmp_itemkind_reverse\1\18ending_tildes\1\17dim_inactive\1\16transparent\1\16term_colors\2\nstyle\rvulgaris\nsetup\vbamboo\frequire\0", "config", "bamboo.nvim")
 time([[Config for bamboo.nvim]], false)
 
 _G._packer.inside_compile = false

@@ -29,10 +29,6 @@ vim.api.nvim_set_keymap('n', '<Leader>t', ':vsplit term://zsh<CR>', { noremap = 
 -- Comment lines
 vim.api.nvim_set_keymap('n', '<Leader>cc', '<YOUR_COMMENT_COMMAND>', { noremap = true })
 
--- Keys for completion
-vim.api.nvim_set_keymap('i', '<C-Space>', '<Plug>(compe-complete)', { noremap = true, silent = true, expr = true })
-vim.api.nvim_set_keymap('i', '<C-e>', '<Plug>(compe-close)', { noremap = true, silent = true, expr = true })
-
 -- Focus NERDTree and switch to the previous window
 vim.api.nvim_set_keymap('n', '<Leader>rr', ':NERDTreeFocus<cr>R<c-w><c-p>', { noremap = true })
 
