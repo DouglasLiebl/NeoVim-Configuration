@@ -49,8 +49,8 @@ local function save_profiles(threshold)
 end
 
 time([[Luarocks path setup]], true)
-local package_path_str = "/home/douglas/.cache/nvim/packer_hererocks/2.1.1703358377/share/lua/5.1/?.lua;/home/douglas/.cache/nvim/packer_hererocks/2.1.1703358377/share/lua/5.1/?/init.lua;/home/douglas/.cache/nvim/packer_hererocks/2.1.1703358377/lib/luarocks/rocks-5.1/?.lua;/home/douglas/.cache/nvim/packer_hererocks/2.1.1703358377/lib/luarocks/rocks-5.1/?/init.lua"
-local install_cpath_pattern = "/home/douglas/.cache/nvim/packer_hererocks/2.1.1703358377/lib/lua/5.1/?.so"
+local package_path_str = "/home/douglas/.cache/nvim/packer_hererocks/2.1.1702233742/share/lua/5.1/?.lua;/home/douglas/.cache/nvim/packer_hererocks/2.1.1702233742/share/lua/5.1/?/init.lua;/home/douglas/.cache/nvim/packer_hererocks/2.1.1702233742/lib/luarocks/rocks-5.1/?.lua;/home/douglas/.cache/nvim/packer_hererocks/2.1.1702233742/lib/luarocks/rocks-5.1/?/init.lua"
+local install_cpath_pattern = "/home/douglas/.cache/nvim/packer_hererocks/2.1.1702233742/lib/lua/5.1/?.so"
 if not string.find(package.path, package_path_str, 1, true) then
   package.path = package.path .. ';' .. package_path_str
 end
@@ -84,12 +84,6 @@ _G.packer_plugins = {
     path = "/home/douglas/.local/share/nvim/site/pack/packer/start/auto-pairs",
     url = "https://github.com/jiangmiao/auto-pairs"
   },
-  ["bamboo.nvim"] = {
-    config = { "\27LJ\2\nö\3\0\0\4\0\15\0\0246\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\4\0=\3\5\0025\3\6\0=\3\a\0025\3\b\0=\3\t\0024\3\0\0=\3\n\0024\3\0\0=\3\v\0025\3\f\0=\3\r\2B\0\2\0016\0\0\0'\2\1\0B\0\2\0029\0\14\0B\0\1\1K\0\1\0\tload\16diagnostics\1\0\3\vdarker\1\15background\2\14undercurl\2\15highlights\vcolors\flualine\1\0\1\16transparent\1\15code_style\1\0\b\15namespaces\vitalic\14functions\tnone\fstrings\tnone\rkeywords\tnone\17conditionals\vitalic\14variables\tnone\rcomments\vitalic\15parameters\vitalic\22toggle_style_list\1\4\0\0\rvulgaris\14multiplex\nlight\1\0\6\25cmp_itemkind_reverse\1\18ending_tildes\1\17dim_inactive\1\16transparent\1\16term_colors\2\nstyle\rvulgaris\nsetup\vbamboo\frequire\0" },
-    loaded = true,
-    path = "/home/douglas/.local/share/nvim/site/pack/packer/start/bamboo.nvim",
-    url = "https://github.com/ribru17/bamboo.nvim"
-  },
   ["cmp-buffer"] = {
     loaded = true,
     path = "/home/douglas/.local/share/nvim/site/pack/packer/start/cmp-buffer",
@@ -120,10 +114,20 @@ _G.packer_plugins = {
     path = "/home/douglas/.local/share/nvim/site/pack/packer/start/elixir-tools.nvim",
     url = "https://github.com/elixir-tools/elixir-tools.nvim"
   },
+  ["eslint.nvim"] = {
+    loaded = true,
+    path = "/home/douglas/.local/share/nvim/site/pack/packer/start/eslint.nvim",
+    url = "https://github.com/MunifTanjim/eslint.nvim"
+  },
   ["friendly-snippets"] = {
     loaded = true,
     path = "/home/douglas/.local/share/nvim/site/pack/packer/start/friendly-snippets",
     url = "https://github.com/rafamadriz/friendly-snippets"
+  },
+  ["indent-blankline.nvim"] = {
+    loaded = true,
+    path = "/home/douglas/.local/share/nvim/site/pack/packer/start/indent-blankline.nvim",
+    url = "https://github.com/lukas-reineke/indent-blankline.nvim"
   },
   ["lsp-zero.nvim"] = {
     loaded = true,
@@ -134,6 +138,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/douglas/.local/share/nvim/site/pack/packer/start/lspkind-nvim",
     url = "https://github.com/onsails/lspkind-nvim"
+  },
+  ["lualine.nvim"] = {
+    loaded = true,
+    path = "/home/douglas/.local/share/nvim/site/pack/packer/start/lualine.nvim",
+    url = "https://github.com/nvim-lualine/lualine.nvim"
   },
   ["mason-lspconfig.nvim"] = {
     loaded = true,
@@ -160,6 +169,11 @@ _G.packer_plugins = {
     path = "/home/douglas/.local/share/nvim/site/pack/packer/start/nerdtree-git-plugin",
     url = "https://github.com/Xuyuanp/nerdtree-git-plugin"
   },
+  ["null-ls.nvim"] = {
+    loaded = true,
+    path = "/home/douglas/.local/share/nvim/site/pack/packer/start/null-ls.nvim",
+    url = "https://github.com/jose-elias-alvarez/null-ls.nvim"
+  },
   ["nvim-cmp"] = {
     loaded = true,
     path = "/home/douglas/.local/share/nvim/site/pack/packer/start/nvim-cmp",
@@ -175,6 +189,12 @@ _G.packer_plugins = {
     path = "/home/douglas/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
     url = "https://github.com/nvim-treesitter/nvim-treesitter"
   },
+  ["nvim-web-devicons"] = {
+    loaded = false,
+    needs_bufread = false,
+    path = "/home/douglas/.local/share/nvim/site/pack/packer/opt/nvim-web-devicons",
+    url = "https://github.com/nvim-tree/nvim-web-devicons"
+  },
   ["packer.nvim"] = {
     loaded = true,
     path = "/home/douglas/.local/share/nvim/site/pack/packer/start/packer.nvim",
@@ -189,6 +209,12 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/douglas/.local/share/nvim/site/pack/packer/start/telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
+  },
+  ["tokyonight.nvim"] = {
+    config = { "\27LJ\2\n:\0\0\3\0\3\0\0056\0\0\0009\0\1\0'\2\2\0B\0\2\1K\0\1\0\27colorscheme tokyonight\bcmd\bvim\0" },
+    loaded = true,
+    path = "/home/douglas/.local/share/nvim/site/pack/packer/start/tokyonight.nvim",
+    url = "https://github.com/folke/tokyonight.nvim"
   },
   undotree = {
     loaded = true,
@@ -213,10 +239,10 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
--- Config for: bamboo.nvim
-time([[Config for bamboo.nvim]], true)
-try_loadstring("\27LJ\2\nö\3\0\0\4\0\15\0\0246\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\4\0=\3\5\0025\3\6\0=\3\a\0025\3\b\0=\3\t\0024\3\0\0=\3\n\0024\3\0\0=\3\v\0025\3\f\0=\3\r\2B\0\2\0016\0\0\0'\2\1\0B\0\2\0029\0\14\0B\0\1\1K\0\1\0\tload\16diagnostics\1\0\3\vdarker\1\15background\2\14undercurl\2\15highlights\vcolors\flualine\1\0\1\16transparent\1\15code_style\1\0\b\15namespaces\vitalic\14functions\tnone\fstrings\tnone\rkeywords\tnone\17conditionals\vitalic\14variables\tnone\rcomments\vitalic\15parameters\vitalic\22toggle_style_list\1\4\0\0\rvulgaris\14multiplex\nlight\1\0\6\25cmp_itemkind_reverse\1\18ending_tildes\1\17dim_inactive\1\16transparent\1\16term_colors\2\nstyle\rvulgaris\nsetup\vbamboo\frequire\0", "config", "bamboo.nvim")
-time([[Config for bamboo.nvim]], false)
+-- Config for: tokyonight.nvim
+time([[Config for tokyonight.nvim]], true)
+try_loadstring("\27LJ\2\n:\0\0\3\0\3\0\0056\0\0\0009\0\1\0'\2\2\0B\0\2\1K\0\1\0\27colorscheme tokyonight\bcmd\bvim\0", "config", "tokyonight.nvim")
+time([[Config for tokyonight.nvim]], false)
 
 _G._packer.inside_compile = false
 if _G._packer.needs_bufread == true then
