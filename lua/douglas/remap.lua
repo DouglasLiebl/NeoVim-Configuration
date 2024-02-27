@@ -30,7 +30,7 @@ vim.api.nvim_set_keymap('n', '<Leader>t', ':vsplit term://zsh<CR>', { noremap = 
 vim.api.nvim_set_keymap('n', '<Leader>cc', '<YOUR_COMMENT_COMMAND>', { noremap = true })
 
 -- Focus NERDTree and switch to the previous window
---vim.api.nvim_set_keymap('n', '<Leader>rr', ':NERDTreeFocus<cr>R<c-w><c-p>', { noremap = true })
+vim.api.nvim_set_keymap('n', '<Leader>rr', ':NERDTreeFocus<cr>R<c-w><c-p>', { noremap = true })
 
 -- UndoTree
 vim.keymap.set("n", "<leader>u", vim.cmd.UndotreeToggle)
